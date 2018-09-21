@@ -1,0 +1,23 @@
+{
+  "name": "day5wkshop",
+  "version": "1.0.0",
+  "description": "day 5 assessment workshop",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvameka/day5wkshop.git"
+  },
+  "author": "dvameka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvameka/day5wkshop/issues"
+  },
+  "homepage": "https://github.com/dvameka/day5wkshop#readme"
+}

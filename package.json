@@ -4,7 +4,11 @@
   "description": "day 5 assessment workshop",
   "main": "main.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "layouts": "^3.0.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {},
   "scripts": {

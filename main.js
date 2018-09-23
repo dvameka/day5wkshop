@@ -48,7 +48,7 @@ app.get('/', (req, resp) => {
 app.get("/api/search",(req,res,next)=>{
    const params = {
         api_key: '9DpO8151e4NRN7DfRPySwC0Xeo4XVtqW',
-        qs:'',
+       
         limit : 5
     };
 
@@ -57,7 +57,7 @@ app.get("/api/search",(req,res,next)=>{
 
     res.status(200);
     console.log(params);
-    request.get('https://api.giphy.com/v1/gifs/search?api_key=9DpO8151e4NRN7DfRPySwC0Xeo4XVtqW&q=unicorn&limit=5',
+    request.get('https://api.giphy.com/v1/gifs/search?', {qs: params },
            
                 (err, respond, body)=>{ 
 

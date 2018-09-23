@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="font-src 'self' data:;>
     <title>Document</title>
 </head>
 <body>
        <h1>GIF Search</h1> 
        <form action="" method="get"></form>
         <form action="" id="search"></form>
+
+        {{#each gifs}}
+        <div>
+            <!-- <img src="{{this.images.fixed_height.url}}" alt=""> -->
+            <img src="{{this}}">
+        </div>
+            {{/each}}
 </body>
 </html>
 

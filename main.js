@@ -1,11 +1,9 @@
 //load libraries
-const http=require('http');
 const express=require('express');
 const path=require('path');
 const cors=require('cors');
 const hbs=require('express-handlebars');
 const request=require('request');
-const defaultLayout=require('Layouts');
 const qs=require('querystring');
 const bodyParser=require('body-parser');
 
@@ -48,8 +46,8 @@ app.get('/', (req, resp) => {
 app.get("/api/search",(req,res,next)=>{
    const params = {
         api_key: '9DpO8151e4NRN7DfRPySwC0Xeo4XVtqW',
-       
-        limit : 5
+        q: req.query.searchTerm,
+        limit : req.query.searchCount,
     };
 
     const fixedWidthUrls = [];
